@@ -8,10 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body { background-color: #000000 !important; color: #F9FAFB !important; }
-    .bg-black-pure { background-color: #000000 !important; }
     .bg-fedex-orange { background-color: #FF6600 !important; }
     .text-fedex-orange { color: #FF6600 !important; }
     .border-fedex-orange { border-color: #FF6600 !important; }
+    @keyframes popup {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+    .popular-card {
+      animation: popup 3s infinite ease-in-out;
+      box-shadow: 0 0 30px rgba(255, 102, 0, 0.25);
+    }
   </style>
 </head>
 <body class="bg-black text-white font-sans antialiased selection:bg-orange-500 selection:text-white">
@@ -50,19 +58,19 @@
           Streamlined Remote Operations for <span class="text-fedex-orange">FedEx Ground</span> Contractors.
         </h1>
         <p class="text-lg text-zinc-400 max-w-2xl">
-          Hi, I'm <strong class="text-white">Abdullah Shah</strong>. I manage your GroundCloud manifest ops, VEDR safety coaching, VTrack telematics, and package dispute appeals so you can focus on fleet scale.
+          Hi, I'm <strong class="text-white">Abdullah Shah</strong>. I manage your GroundCloud manifest ops, VEDR safety coaching, VTrack telematics, MMR compliance, and package dispute appeals so you can scale your fleet.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
           <a href="#pricing" class="bg-fedex-orange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg transition">
-            View All-In-One Suite ($500/mo)
+            View All-In-One Master Suite ($500/mo)
           </a>
           <a href="#contact" class="border border-zinc-800 hover:border-zinc-700 text-zinc-200 font-semibold px-8 py-4 rounded-xl text-center transition">
-            Request 3-Day Free Trial
+            Contact For Partnership
           </a>
         </div>
       </div>
       
-      <!-- Hero Image (fedex.png) -->
+      <!-- Hero Image -->
       <div class="lg:col-span-5 border border-zinc-800 bg-zinc-950 rounded-2xl overflow-hidden p-2 shadow-2xl">
         <img src="fedex.png" alt="FedEx Ground Step Van Fleet" class="w-full h-80 object-cover rounded-xl">
         <div class="p-4 bg-black flex justify-between items-center border-t border-zinc-900 mt-2">
@@ -78,7 +86,7 @@
     </div>
   </section>
 
-  <!-- Core Services Grid (All 4 Images) -->
+  <!-- Core Services Grid -->
   <section id="services" class="py-20 bg-zinc-950 border-y border-zinc-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -107,11 +115,11 @@
               <h4 class="text-xl font-bold text-white">VEDR & Safety Coaching</h4>
               <span class="text-fedex-orange font-bold">$150 / mo</span>
             </div>
-            <p class="text-sm text-zinc-400">VTrack dashcam event reviews, driver safety risk scoring, MMR compliance auditing, and dispute appeals.</p>
+            <p class="text-sm text-zinc-400">Continuous VTrack dashcam event reviews, driver safety risk scoring, and coaching feedback loops.</p>
           </div>
         </div>
 
-        <!-- In-Cab Telematics (vtrack.png) -->
+        <!-- VTrack Telematics -->
         <div class="bg-black border border-zinc-900 rounded-2xl overflow-hidden hover:border-orange-500/50 transition">
           <img src="vtrack.png" alt="In-Cab Telematics" class="w-full h-64 object-cover border-b border-zinc-900">
           <div class="p-6 space-y-3">
@@ -123,15 +131,15 @@
           </div>
         </div>
 
-        <!-- Driver Ops (fedex.png) -->
+        <!-- Driver Ops & Disputes -->
         <div class="bg-black border border-zinc-900 rounded-2xl overflow-hidden hover:border-orange-500/50 transition">
           <img src="fedex.png" alt="FedEx Driver Operations" class="w-full h-64 object-cover border-b border-zinc-900">
           <div class="p-6 space-y-3">
             <div class="flex justify-between items-center">
-              <h4 class="text-xl font-bold text-white">Package Disputes & Onboarding</h4>
+              <h4 class="text-xl font-bold text-white">Package Disputes, MMR & Onboarding</h4>
               <span class="text-fedex-orange font-bold">$150 / mo</span>
             </div>
-            <p class="text-sm text-zinc-400">Claims dispute submission, driver onboarding assistance, terminal report aggregation, and administrative support.</p>
+            <p class="text-sm text-zinc-400">Claims dispute submission, MMR compliance auditing, driver onboarding assistance, and terminal reporting.</p>
           </div>
         </div>
       </div>
@@ -159,32 +167,107 @@
   <section id="pricing" class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-extrabold text-fedex-orange uppercase tracking-widest mb-2">Pricing Modules</h2>
-        <h3 class="text-3xl font-black text-white">Individual Modules or All-In-One Operational Suite</h3>
+        <h2 class="text-xs font-extrabold text-fedex-orange uppercase tracking-widest mb-2">Transparent Pricing</h2>
+        <h3 class="text-3xl font-black text-white">Choose Individual Monthly Modules or the All-In-One Suite</h3>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6">
-          <h4 class="text-xl font-bold text-white">Single Module</h4>
-          <p class="text-zinc-400 text-sm">Pick any individual operational module (e.g. VEDR or GroundCloud).</p>
-          <div class="text-4xl font-black text-white">$150 <span class="text-base text-zinc-400 font-normal">/ month</span></div>
-          <a href="#contact" class="block text-center border border-zinc-800 hover:border-zinc-700 text-white font-bold py-3 rounded-xl transition">Select Module</a>
+      <!-- Pricing Grid: Individual Modules ($150 each) + Master Suite ($500 popup) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. GroundCloud Module -->
+        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-white mb-2">GroundCloud Module</h4>
+            <p class="text-zinc-400 text-sm mb-4">Dedicated manifest oversight & route stop optimization.</p>
+            <div class="text-3xl font-black text-white mb-6">$150 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-300">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Manifest & Route Management</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>P&D Time Commit Monitoring</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Real-time Driver Tracking</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center border border-zinc-800 hover:border-orange-500 text-white font-bold py-3 rounded-xl transition">Select Module</a>
         </div>
 
-        <div class="bg-zinc-950 border-2 border-fedex-orange rounded-2xl p-8 space-y-6 relative shadow-xl shadow-orange-500/10">
-          <span class="absolute -top-3 right-6 bg-fedex-orange text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
-          <h4 class="text-xl font-bold text-white">All-In-One Suite</h4>
-          <p class="text-zinc-400 text-sm">Complete remote back-office operational ownership for your fleet.</p>
-          <div class="text-4xl font-black text-white">$500 <span class="text-base text-zinc-400 font-normal">/ month</span></div>
-          <a href="#contact" class="block text-center bg-fedex-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition">Get All-In-One Suite</a>
+        <!-- 2. VEDR Module -->
+        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-white mb-2">VEDR Safety Module</h4>
+            <p class="text-zinc-400 text-sm mb-4">Continuous dashcam event review & coaching feedback.</p>
+            <div class="text-3xl font-black text-white mb-6">$150 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-300">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>VTrack Dashcam Event Audits</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Driver Risk Scoring & Coaching</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Safety Compliance Reporting</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center border border-zinc-800 hover:border-orange-500 text-white font-bold py-3 rounded-xl transition">Select Module</a>
         </div>
 
-        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6">
-          <h4 class="text-xl font-bold text-white">3-Day Zero-Risk Trial</h4>
-          <p class="text-zinc-400 text-sm">Test turnaround speed and daily operational reporting with zero commitment.</p>
-          <div class="text-4xl font-black text-white">$0 <span class="text-base text-zinc-400 font-normal">/ 3 days</span></div>
-          <a href="#contact" class="block text-center border border-zinc-800 hover:border-zinc-700 text-white font-bold py-3 rounded-xl transition">Start Free Trial</a>
+        <!-- 3. VTrack Telematics Module -->
+        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-white mb-2">VTrack Telematics Module</h4>
+            <p class="text-zinc-400 text-sm mb-4">Fleet telemetry monitoring & camera health checks.</p>
+            <div class="text-3xl font-black text-white mb-6">$150 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-300">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Fleet Telemetry Oversight</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Camera Health Verification</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Hardware Troubleshooting Logs</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center border border-zinc-800 hover:border-orange-500 text-white font-bold py-3 rounded-xl transition">Select Module</a>
         </div>
+
+        <!-- 4. Package Disputes Module -->
+        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-white mb-2">Disputes & Onboarding Module</h4>
+            <p class="text-zinc-400 text-sm mb-4">Claims dispute management & driver onboarding.</p>
+            <div class="text-3xl font-black text-white mb-6">$150 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-300">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Package Claims Dispute Filing</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Driver Onboarding Assistance</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Terminal Administrative Support</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center border border-zinc-800 hover:border-orange-500 text-white font-bold py-3 rounded-xl transition">Select Module</a>
+        </div>
+
+        <!-- 5. MMR Compliance Module -->
+        <div class="bg-zinc-950 border border-zinc-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+          <div>
+            <h4 class="text-xl font-bold text-white mb-2">MMR Compliance Module</h4>
+            <p class="text-zinc-400 text-sm mb-4">Dedicated monthly maintenance & metric rating audits.</p>
+            <div class="text-3xl font-black text-white mb-6">$150 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-300">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>MMR Metric Auditing</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Contractor Compliance Tracking</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-orange-500"></i><span>Performance Scorecard Analysis</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center border border-zinc-800 hover:border-orange-500 text-white font-bold py-3 rounded-xl transition">Select Module</a>
+        </div>
+
+        <!-- 6. ALL-IN-ONE MASTER SUITE ($500/mo) - POPUP HIGHLIGHTED -->
+        <div class="bg-zinc-950 border-2 border-fedex-orange rounded-2xl p-8 space-y-6 flex flex-col justify-between popular-card relative">
+          <span class="absolute -top-3 right-6 bg-fedex-orange text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Most Popular & Best Value</span>
+          <div>
+            <h4 class="text-2xl font-black text-white mb-2">All-In-One Master Suite</h4>
+            <p class="text-zinc-300 text-sm mb-4">Complete terminal back-office ownership combining every single operational module.</p>
+            <div class="text-4xl font-black text-white mb-6">$500 <span class="text-sm text-zinc-400 font-normal">/ month</span></div>
+            <ul class="space-y-3 text-sm text-zinc-200">
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-fedex-orange"></i><span><strong>GroundCloud</strong> Manifest & Route Control</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-fedex-orange"></i><span><strong>VEDR</strong> Safety Coaching & Dashcam Audits</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-fedex-orange"></i><span><strong>VTrack</strong> Fleet Telematics & Telemetry</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-fedex-orange"></i><span><strong>MMR Compliance</strong> & Metric Reviews</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-fedex-orange"></i><span><strong>Package Dispute Appeals</strong> & Onboarding</span></li>
+              <li class="flex items-center space-x-2"><i class="fa-solid fa-star text-orange-400"></i><span><strong>Save $250/mo</strong> vs Individual Modules</span></li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center bg-fedex-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition">Get All-In-One Master Suite</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -194,7 +277,7 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-black text-white">Partner with Abdullah Shah</h2>
-        <p class="text-zinc-400 mt-2">Submit your details to start your 3-day free trial or select an operational package.</p>
+        <p class="text-zinc-400 mt-2">Submit your details to start your monthly operational partnership.</p>
       </div>
 
       <form action="https://formsubmit.co/abdullahshah27654@gmail.com" method="POST" class="bg-black border border-zinc-900 rounded-2xl p-8 space-y-6">
@@ -223,11 +306,14 @@
         </div>
 
         <div>
-          <label class="block text-xs font-semibold uppercase text-zinc-400 mb-2">Interested Package</label>
+          <label class="block text-xs font-semibold uppercase text-zinc-400 mb-2">Selected Package</label>
           <select name="package" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500">
-            <option value="All-In-One Package ($500/mo)">All-In-One Suite ($500 / month)</option>
-            <option value="Individual Module ($150/mo)">Single Module ($150 / month)</option>
-            <option value="3-Day Free Trial">3-Day Free Trial</option>
+            <option value="All-In-One Master Suite ($500/mo)">All-In-One Master Suite ($500 / month)</option>
+            <option value="GroundCloud Module ($150/mo)">GroundCloud Module ($150 / month)</option>
+            <option value="VEDR Safety Module ($150/mo)">VEDR Safety Module ($150 / month)</option>
+            <option value="VTrack Telematics Module ($150/mo)">VTrack Telematics Module ($150 / month)</option>
+            <option value="Disputes & Onboarding Module ($150/mo)">Disputes & Onboarding Module ($150 / month)</option>
+            <option value="MMR Compliance Module ($150/mo)">MMR Compliance Module ($150 / month)</option>
           </select>
         </div>
 
@@ -237,7 +323,7 @@
         </div>
 
         <button type="submit" class="w-full bg-fedex-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition text-center">
-          Submit Inquiry to Abdullah Shah
+          Submit Partnership Inquiry to Abdullah Shah
         </button>
       </form>
     </div>
